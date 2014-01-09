@@ -7,11 +7,11 @@
 	<link href=
 	'http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 
-	<title>&#187;Newsbeard</title>
+	<title>&#187;Fitness News</title>
 
 	<!-- Meta tags. So inception. So wow.  -->
-	<meta name="description" content="Technology News Aggregator">
-	<meta name="keywords" content="News,Technology,Gaming,Linux,Android,Tech,Nerd,Geek,HTML,CSS,XML,JavaScript">
+	<meta name="description" content="Fitness News Aggregator">
+	<meta name="keywords" content="News,Fitness,Body Building,Healthy Life,Fitness Workouts,Clean Food,Protein,Fitness Training,Health Fitness,Fitness Equipment,Fitness Tips,Fitness Nutrition,Mens Health, Womens Health">
 	<meta name="author" content="user" >
 	<meta charset="UTF-8">
 
@@ -23,7 +23,7 @@
 
 
 	<!-- Stylesheet linker code -->
-	<link href="/s/newsbeard.css" rel="stylesheet" type="text/css">
+	<link href="/fitnessnews/s/newsbeard.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -31,17 +31,17 @@
 	<!-- Big orange banner code -->
 		<div id="splashscreen" class="loading">		
 			<center><h2>
-    &#187;Newsbeard
+    &#187;Fitness News
 	</h2></center></ul></div>	
 	
 	
 	<!-- Div container for article list -->
 	<div id="rssdata">
 	<select value="Topics" id="nbmenu" onchange="if (this.value) window.location.href=this.value">
-  <option value="index.html" selected >Newsbeard</option>
-  <option value="gaming.html"  >Gaming</option>
-  <option value="worldnews.html">WorldNews</option>
-  <option value="culture.html"  >Culture</option>
+  <option value="fitnessnews/index.html" selected >Newsbeard</option>
+  <option value="fitnessnews/gaming.html"  >Gaming</option>
+  <option value="fitnessnews/worldnews.html">WorldNews</option>
+  <option value="fitnessnews/culture.html"  >Culture</option>
   </select>
 
 	<div class="rss-title">
@@ -69,7 +69,7 @@
 
 		$('#rssdata').ready(function()
 		{
-			var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json&_callback=?';
+			var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=f71e6aac678ebb77e002b499301d6ccb&_render=json&_callback=?';
 				$.getJSON(pipe_url,function(data)
 					{
 				$(data.value.items).each(function(index,item)
