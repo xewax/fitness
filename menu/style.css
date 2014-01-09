@@ -1,0 +1,21 @@
+div {
+    height:4rem;
+    width:4rem;
+    display: inline-block;
+}
+
+#newsbeard {
+    background-color:#F50;
+}
+
+#gaming {
+    background-color:#0000FF;
+}
+
+#worldnews {
+    background-color:#E2BE22;
+}
+
+#culture {
+    background-color:#008800;
+}
